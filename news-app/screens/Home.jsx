@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import Post from '../components/Post';
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   const [isLoading, setIsLoading] = useState(false);
   const [items, setItems] = useState();
 
@@ -57,7 +57,14 @@ export default function HomeScreen() {
         }
         data={items}
         renderItem={({ item }) => (
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={({}) => {
+              navigation.navigate('FullPost', {
+                id: item?.id,
+                title: item?.title,
+              });
+            }}
+          >
             <Post
               title={item.title}
               createdAt={item.createdAt}
