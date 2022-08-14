@@ -1,5 +1,6 @@
-/node_modules
-node_modules/
+node_modules
+yarn.lock
+
 .expo/
 dist/
 npm-debug.*
