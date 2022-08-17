@@ -2,6 +2,8 @@
   "expo": {
     "name": "news-app",
     "slug": "news-app",
+    "privacy": "public",
+    "description": "An application to keep track of news",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,15 +19,15 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "news-app-developing-app",
+      "bundleIdentifier": "com.nurgaliyevs.newsapp",
       "config": {
         "googleSignIn": {
-          "reservedClientId": "com.googleusercontent.apps.395452257026-g62220qshl1glrb9ohe4r1jqarcqugnv "
+          "reservedClientId": "com.googleusercontent.apps.395452257026-g62220qshl1glrb9ohe4r1jqarcqugnv"
         }
       }
     },
     "android": {
-      "package": "news-app-developing-app",
+      "package": "com.nurgaliyevs.newsapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
