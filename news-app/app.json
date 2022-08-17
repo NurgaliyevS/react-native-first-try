@@ -17,7 +17,12 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "news-app-developing-app"
+      "bundleIdentifier": "news-app-developing-app",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.395452257026-g62220qshl1glrb9ohe4r1jqarcqugnv "
+        }
+      }
     },
     "android": {
       "package": "news-app-developing-app",
